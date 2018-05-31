@@ -34,11 +34,12 @@ header{
   
 }
 #banner .bg-image{
-  position: absolute;
+  width: 80%;
+  /* position: absolute; */
   background: #656565 url("../img/barMain_crop.jpg");
   background-position: cover;
   background-repeat: no-repeat;
-  background-size: ;
+  background-size: cover;
   min-height: 350px;
   z-index: -1;
   opacity: 0.75;
