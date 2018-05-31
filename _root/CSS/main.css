@@ -28,15 +28,15 @@ header{
 }
 #banner{
   min-height: 350px;
-  text-align: left;
+  /* text-align: left; */
   color: aliceblue;
   font-size: 2em;
   
 }
 #banner .bg-image{
   position: absolute;
-  background: #656565 url("../img/bar.jpg");
-  background-position: cover right ;
+  background: #656565 url("../img/barMain_crop.jpg");
+  background-position: cover;
   background-repeat: no-repeat;
   background-size: ;
   min-height: 350px;
