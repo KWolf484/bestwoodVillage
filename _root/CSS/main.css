@@ -9,22 +9,38 @@ body, html{
 .clear {
   float: none;
 }
-/* #region header */
+/* #region banner */
 header {
-  background-color: olivedrab;
-  border-bottom: 2px solid darkolivegreen;
+  background-color: darkolivegreen;
 }
 #logo {
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: ghostwhite;
 }
+#logo h4 {
+  border-bottom: 2px solid rgb(100, 100, 100); 
+}
+header {
+  border-bottom: 2px solid rgb(100, 100, 100);
+}
+/* #endregion banner */
 #navMenu {
+  background-color: olivedrab;
   text-align: center;
-  list-style: none;
   font-size: 24px;
 }
 #navMenu li {
+  color: aliceblue;
   display: inline;
+  list-style: none;
+  
+}
+#navMenu li:hover {
+  text-decoration: none;
+}
+#navMenu li:visited {
+  text-decoration: none;
 }
 /* #endregion */
 #container {
