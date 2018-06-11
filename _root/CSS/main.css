@@ -9,7 +9,12 @@ body, html{
 .clear {
   float: none;
 }
+h2 div a {
+  padding: 0px;
+  margin: 0px;
+}
 /* #region banner */
+
 header {
   background-color: darkolivegreen;
 }
@@ -18,13 +23,15 @@ header {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: ghostwhite;
 }
+#logo h1 {
+  font-size: 72px;
+}
 #logo h4 {
   border-bottom: 2px solid rgb(100, 100, 100); 
 }
 header {
   border-bottom: 2px solid rgb(100, 100, 100);
 }
-/* #endregion banner */
 #navMenu {
   background-color: olivedrab;
   text-align: center;
@@ -34,21 +41,75 @@ header {
   color: aliceblue;
   display: inline;
   list-style: none;
-  
 }
-#navMenu li:hover {
+#navMenu li a {
+  color: aliceblue;
   text-decoration: none;
+  padding: 0px 25px;
 }
-#navMenu li:visited {
-  text-decoration: none;
+#navMenu li a:hover {
+  color: lightgreen;
 }
-/* #endregion */
+/* #endregion Banner */
+/* #region container */
+
 #container {
-  width: 92.5%;
+  width: 80%;
   margin: auto;
-
+}
+.contentBox {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  'contentGrid-a contentGrid-b contentGrid-c';
+}
+h2 {
+  font-size: 2em;
+  text-indent: 50px;
+  padding-top: 1.5em;
+  padding-bottom: .5em;
+}
+.contentBox div {
+  text-align: center;
+  justify-self: center;
 }
 
-#footer {
+.cards {
+  margin-top: 0px;
+  border: 1px solid red;
+  width: 250px;
+  height: 125px;
+}
+.content1 {
+  grid-area: contentGrid-a;
+  grid-column: 1/2;
+}
+.content2 {
+  grid-area: contentGrid-b;
+  grid-column: 2/3;
+}
+.content3 {
+  grid-area: contentGrid-c;
+  grid-column: 3/4;
+/* #endregion content */
+
+/* #region footer */
+
+footer {
   position: fixed;
 }
+
+footer p {
+  width: 100%;
+  height: 2em;
+  color: ghostwhite;
+  background-color: darkolivegreen;
+  bottom: 0px;
+  position: fixed;
+  text-align: center;
+  font-size: 1.25em;
+  padding-top: 1em;
+}
+/* #endregion footer */
