@@ -57,7 +57,13 @@ header {
   width: 80%;
   margin: auto;
 }
-.contentBox {
+h2 {
+  font-size: 2em;
+  text-indent: 50px;
+  padding-top: 1.5em;
+  padding-bottom: .5em;
+}
+.cards {
   width: 85%;
   margin: auto;
   display: grid;
@@ -65,18 +71,9 @@ header {
   grid-template-areas:
   'contentGrid-a contentGrid-b contentGrid-c';
 }
-h2 {
-  font-size: 2em;
-  text-indent: 50px;
-  padding-top: 1.5em;
-  padding-bottom: .5em;
-}
-.contentBox div {
+.cards div {
   text-align: center;
   justify-self: center;
-}
-
-.cards {
   margin-top: 0px;
   border: 1px solid red;
   width: 250px;
